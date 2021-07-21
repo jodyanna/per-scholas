@@ -11,25 +11,25 @@ from customers
 where country="Germany"
 order by contactLastName asc;
 
---3
+-- 3
 select distinct status
 from orders
 order by status asc;
 
---4
+-- 4
 select *
 from payments
 where paymentDate >= "20050101"
 order by paymentDate asc;
 
---5
+-- 5
 select lastName, firstName, email, jobTitle
 from employees
 join offices on employees.officeCode=offices.officeCode
 where offices.city="San Francisco"
 order by lastName asc;
 
---6
+-- 6
 select productName, productLine, productScale, productVendor
 from products
 where productLine="Classic Cars" or productLine="Vintage Cars"

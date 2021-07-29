@@ -61,9 +61,11 @@ public class Loops {
 
   static void problemSeven() {
     for (int i = 10; i < 201; i++) {
+      // setup, convert number to string
       String num = Integer.toString(i);
       boolean isPalindrome = true;
 
+      // check if num is palindrome
       int j = 0;
       for (int k = num.length() - 1; k > 0; k--) {
         if (num.charAt(k) != num.charAt(j)) {
